@@ -1,16 +1,21 @@
-// ÒıÈë vue.js µÄÄ¬ÈÏÖµ
+// å¼•å…¥ vue.js çš„é»˜è®¤å€¼
 import Vue from 'vue'
-// ÒıÈë App.vue µÄÄ¬ÈÏÖµ
+// å¼•å…¥ App.vue çš„é»˜è®¤å€¼
 import App from './App'
+//å¼•å…¥ routerä¸‹çš„index.js
+import router from './router'
+import './directives'
 
-// ÉèÖÃ false ÒÔ×èÖ¹ Vue ÔÚÆô¶¯Ê±Éú³ÉÉú²úÌáÊ¾
+// è®¾ç½® false ä»¥é˜»æ­¢ Vue åœ¨å¯åŠ¨æ—¶ç”Ÿæˆç”Ÿäº§æç¤º
 Vue.config.productionTip = false
 
-// eslint ÅäÖÃ£¬ÔÊĞí new Ò»¸öÊµÀıºó²»¸³Öµ£¬ÎÒÃÇÃ»ÓĞÊ¹ÓÃ eslint£¬Èç¹ûÓĞ£¬ÔòÏÂÒ»ĞĞ×¢ÊÍ²»¿ÉÈ±ÉÙ
+// eslint é…ç½®ï¼Œå…è®¸ new ä¸€ä¸ªå®ä¾‹åä¸èµ‹å€¼ï¼Œæˆ‘ä»¬æ²¡æœ‰ä½¿ç”¨ eslintï¼Œå¦‚æœæœ‰ï¼Œåˆ™ä¸‹ä¸€è¡Œæ³¨é‡Šä¸å¯ç¼ºå°‘
 /* eslint-disable no-new */
-// ´´½¨Ò»¸öĞÂµÄ Vue ÊµÀı
+// åˆ›å»ºä¸€ä¸ªæ–°çš„ Vue å®ä¾‹
 new Vue({
     el: '#app',
+    router,
     components: { App },
     template: '<App/>'
 })
+
